@@ -10,7 +10,7 @@ def main():
 def load_data():
   # Informações sobre emprego e salário por setor no estado de São Paulo
   # https://repositorio.seade.gov.br/dataset/emprego-rais-e-arquivos-auxiliares
-  escolaridade = pd.read_excel("dados/escolaridade-2022-2023.xlsx")
+  escolaridade = pd.read_excel("data/escolaridade-2022-2023.xlsx")
   return escolaridade
 
 if __name__ == '__main__':
