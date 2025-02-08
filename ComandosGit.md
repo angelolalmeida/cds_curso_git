@@ -56,10 +56,21 @@ git commit -m "Mensagem do commit"
 ```
 
 ## Visualizar histórico de commits
+
+Mostra o hostórico de commits em apenas uma linha
+
 ```md
 ```shell
-  git log
+  git log --oneline
 ```
 
-
 ## Arrumar o histórico de commits
+
+### Alterando o último commit
+
+Para alterar a mensagem do ultimo commit
+
+```md
+```shell
+  git commit -m "Mensagem" -- amend
+```
