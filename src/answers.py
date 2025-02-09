@@ -25,6 +25,7 @@ def rd1_question_9(df):
     return None
 
 def rd1_question_13(df):
+    #pergunta 13
     df_grouped = (
         df.groupby("owner")
         .agg(qty=pd.NamedAgg("id", "count"))
