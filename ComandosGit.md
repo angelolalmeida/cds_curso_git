@@ -66,7 +66,7 @@ Mostra o hostórico de commits em apenas uma linha
 
 Mostra o historico de commits com a difereça entre eles
   -p mostra as diferenças
-  -2 significa que é pra mostrar a difereça dos 2 ultimos 
+  -2 significa que é pra mostrar a difereça dos 2 ultimos
 
 ```md
 ```shell
@@ -94,3 +94,22 @@ Deve-se passar o hash do commit
 ```
 
 ## Comando git rebase
+
+### Rebase interativo
+
+Ele permite editar, reordenar, combinar ou descartar commits. n é o número de commits a trazer a partir do HEAD
+
+```md
+```shell
+  git rebase -i HEAD~n
+```
+
+Dentro o interativo pode-e usar o squash para agrupar commits
+
+Para restaurar o repositorio a um commit anterior, usa-se o rebase também
+
+git rebase --hard <hash_do_commit> -> apaga todas as alterações recentes e volta para o cimmit informado
+
+git  rebase --mixed <hash_do_commit> -> volta as alterações para o word directory para que possam ser revisadas / ajustadas manualmente
+
+
