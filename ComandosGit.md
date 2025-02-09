@@ -64,6 +64,15 @@ Mostra o hostórico de commits em apenas uma linha
   git log --oneline
 ```
 
+Mostra o historico de commits com a difereça entre eles
+  -p mostra as diferenças
+  -2 significa que é pra mostrar a difereça dos 2 ultimos 
+
+```md
+```shell
+  git log --oneline -p -2 
+```
+
 ## Arrumar o histórico de commits
 
 ### Alterando o último commit
@@ -74,3 +83,14 @@ Para alterar a mensagem do ultimo commit
 ```shell
   git commit -m "Mensagem" -- amend
 ```
+
+## Visualizando diferenças entre commits
+
+Deve-se passar o hash do commit
+
+```md
+```shell
+  git diff <commit_antigo> <commit_atual>
+```
+
+## Comando git rebase

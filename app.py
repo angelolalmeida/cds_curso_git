@@ -5,8 +5,8 @@ st.set_page_config(layout='wide')
 
 def main():
   print('Esta é a main!')
-  df = load_data()
-  print(df.head())
+  df_raw = load_data()
+  print(df_raw.head())
   
 
 if __name__ == '__main__':
